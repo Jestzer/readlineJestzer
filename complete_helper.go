@@ -66,7 +66,11 @@ func (p *PrefixCompleter) GetName() []rune {
 func (p *PrefixCompleter) GetDynamicNames(line []rune) [][]rune {
 	var names = [][]rune{}
 	for _, name := range p.Callback(string(line)) {
-		names = append(names, []rune(name+" "))
+		trimmedName := strings.TrimSpace(name) // Trim trailing spaces.
+		if info, err := os.Stat(trimmedName); err == nil && info.IsDir() {
+			trimmedName += string(os.PathSeparator) // Add / or \ if it's a directory.
+		}
+		names = append(names, []rune(trimmedName))
 	}
 	return names
 }

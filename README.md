@@ -5,12 +5,6 @@
 [![OpenCollective](https://opencollective.com/readline/badge/backers.svg)](#backers)
 [![OpenCollective](https://opencollective.com/readline/badge/sponsors.svg)](#sponsors)
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/chzyer/readline/assets/logo.png" />
-<a href="https://asciinema.org/a/32oseof9mkilg7t7d4780qt4m" target="_blank"><img src="https://asciinema.org/a/32oseof9mkilg7t7d4780qt4m.png" width="654"/></a>
-<img src="https://raw.githubusercontent.com/chzyer/readline/assets/logo_f.png" />
-</p>
-
 A powerful readline library in `Linux` `macOS` `Windows` `Solaris` `AIX`
 
 ## Guide

@@ -2,6 +2,7 @@ package readline
 
 import (
 	"bytes"
+	"os"
 	"strings"
 )
 
